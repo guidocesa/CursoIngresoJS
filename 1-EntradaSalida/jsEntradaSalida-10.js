@@ -1,24 +1,28 @@
 /*
-Debemos lograr tomar el importe por ID.
-Transformarlo a entero (parseInt), luego
-mostrar el importe con un Descuento del 25 %
-en el cuadro de texto "RESULTADO"*/
+Nombre: Guido Cesa
+
+*/
 function mostrarAumento()
 {
 	var importe;
-	var resultado;
+	var importeConDescuento;
+	var porcentajeDeDescuento;
+	var cantidadADescontar;
+	
+	//Ingresar descuento que se desea dar
+	var porcentajeDeDescuento = 25;
+	//Se calcula la  proporcion por la que se  debe multiplicar
+	var porcentajeDeDescuento =  (porcentajeDeDescuento / 100);
+	
 
-	importe = parseInt (document.getElementById('txtIdImporte').value);
-
-	//Se checkea que se ingrese un numero y si no es asi se avisa
-	if ( !isNaN(importe))
-	{
-		resultado = importe * 0.75;
-		document.getElementById('txtIdResultado').value = resultado;
-	}
-	else
-	{
-		alert("Por favor verifique que los datos sean correctos.");
-	}
+	importe = document.getElementById('txtIdImporte').value;
+	importe = parseInt(importe);
+	
+    //Se calcula de  cuanto sera el descuento
+    cantidadADescontar = importe * porcentajeDeDescuento;
+    
+    //Se calcula el importe descontado y se muestra
+	importeConDescuento = importe - cantidadADescontar;
+	document.getElementById('txtIdResultado').value = importeConDescuento;
 	
 }

@@ -8,8 +8,10 @@ function sumar()
 	var numeroDos;
 	var resultado;
 
-	numeroUno = parseInt (txtIdNumeroUno.value);
-	numeroDos = parseInt (txtIdNumeroDos.value);
+	numeroUno = txtIdNumeroUno.value;
+	numeroUno = parseInt(numeroUno);
+	numeroDos = txtIdNumeroDos.value;
+	numeroDos = parseInt(numeroDos);
 
 	//NaN es el valor que parse asigna cuando no lee un numero
 	if ( !isNaN(numeroUno) && !isNaN(numeroDos) )

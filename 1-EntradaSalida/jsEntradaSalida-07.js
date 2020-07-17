@@ -9,9 +9,10 @@ function sumar()
 	var numeroDos;
 	var resultado;
 
-	//Aca vemos otra version (mas correcta y menos propensa a errores) de conseguir un valor por ID
-	numeroUno = parseInt (document.getElementById('txtIdNumeroUno').value);
-	numeroDos = parseInt (document.getElementById('txtIdNumeroDos').value);	
+	numeroUno = txtIdNumeroUno.value;
+	numeroUno = parseInt(numeroUno);
+	numeroDos = txtIdNumeroDos.value;
+	numeroDos = parseInt(numeroDos);
 
 	if ( !isNaN(numeroUno) && !isNaN(numeroDos) )
 	{
@@ -30,8 +31,10 @@ function restar()
 	var numeroDos;
 	var resultado;
 
-	numeroUno = parseInt (document.getElementById('txtIdNumeroUno').value);
-	numeroDos = parseInt (document.getElementById('txtIdNumeroDos').value);
+	numeroUno = txtIdNumeroUno.value;
+	numeroUno = parseInt(numeroUno);
+	numeroDos = txtIdNumeroDos.value;
+	numeroDos = parseInt(numeroDos);
 
 	if ( !isNaN(numeroUno) && !isNaN(numeroDos) )
 	{
@@ -50,8 +53,10 @@ function multiplicar()
 	var numeroDos;
 	var resultado;
 
-	numeroUno = parseInt (document.getElementById('txtIdNumeroUno').value);
-	numeroDos = parseInt (document.getElementById('txtIdNumeroDos').value);
+	numeroUno = txtIdNumeroUno.value;
+	numeroUno = parseInt(numeroUno);
+	numeroDos = txtIdNumeroDos.value;
+	numeroDos = parseInt(numeroDos);
 
 	if ( !isNaN(numeroUno) && !isNaN(numeroDos) )
 	{
@@ -70,8 +75,10 @@ function dividir()
 	var numeroDos;
 	var resultado;
 
-	numeroUno = parseInt (document.getElementById('txtIdNumeroUno').value);
-	numeroDos = parseInt (document.getElementById('txtIdNumeroDos').value);
+	numeroUno = txtIdNumeroUno.value;
+	numeroUno = parseInt(numeroUno);
+	numeroDos = txtIdNumeroDos.value;
+	numeroDos = parseInt(numeroDos);
 
 	if ( !isNaN(numeroUno) && !isNaN(numeroDos) && numeroDos != 0 )
 	{
