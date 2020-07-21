@@ -10,12 +10,12 @@ function mostrar()
 		alert("Usted es un niño.");
 	}
 
-	if (edadIngresada >= 13 && edadIngresada <= 17)
+	if (edadIngresada > 12 && edadIngresada < 18)
 	{
 		alert("Usted es un adolescente.");
 	}
 
-	if (edadIngresada >= 18)
+	if (edadIngresada > 17)
 	{
 		alert("Usted es un adulto.");
 	}
