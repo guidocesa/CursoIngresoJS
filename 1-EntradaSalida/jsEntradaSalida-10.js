@@ -10,9 +10,9 @@ function mostrarAumento()
 	var cantidadADescontar;
 	
 	//Ingresar descuento que se desea dar
-	var porcentajeDeDescuento = 25;
+	porcentajeDeDescuento = 25;
 	//Se calcula la  proporcion por la que se  debe multiplicar
-	var porcentajeDeDescuento =  (porcentajeDeDescuento / 100);
+	porcentajeDeDescuento =  (porcentajeDeDescuento / 100);
 	
 
 	importe = document.getElementById('txtIdImporte').value;
