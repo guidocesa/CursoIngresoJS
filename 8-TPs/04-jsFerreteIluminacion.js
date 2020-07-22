@@ -16,7 +16,7 @@ function CalcularPrecio ()
      var importeFinal;
      var porcentajeDeDescuento = 0;
      var descuento = 0;
-     var porcentajeIngresosBrutos =10;
+     var porcentajeIngresosBrutos = 10;
      var importeImpuesto;
      var precioPorLampara = 35;
      

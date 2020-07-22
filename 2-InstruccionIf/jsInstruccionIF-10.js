@@ -18,11 +18,11 @@ function mostrar()
 	{
 		alert("Vamos, la proxima se puede");
 	}
-	if (numeroRandom >= 4 && numeroRandom <9)
+	if (numeroRandom > 3 && numeroRandom < 9)
 	{
 		alert("Aprobo");
 	}
-	if (numeroRandom >= 9)
+	if (numeroRandom > 8 )
 	{
 		alert("Exelente!");
 	}

@@ -9,15 +9,16 @@ function mostrar()
 	{
 		alert("Usted es un niño.");
 	}
-
-	if (edadIngresada > 12 && edadIngresada < 18)
+	else
 	{
-		alert("Usted es un adolescente.");
-	}
-
-	if (edadIngresada > 17)
-	{
-		alert("Usted es un adulto.");
+		if (edadIngresada < 18)
+		{
+			alert("Usted es un adolescente.");
+		}
+		else
+		{
+			alert("Usted es un adulto.");
+		}
 	}
 
 }//FIN DE LA FUNCIÓN
