@@ -9,7 +9,7 @@ function mostrar()
 	numeroRandom = numeroRandom * 10;
 
 	//Ahora lo trunco para  quedarme solo con la parte entera
-	numeroRandom = Math.trunc(numeroRandom);
+	numeroRandom = Math.floor(numeroRandom);
 
 	//Luego tendria que sumarle 1 ya que de esta manera solo puedo obtener numeros entre 0 y 9
 	numeroRandom ++;
@@ -18,14 +18,15 @@ function mostrar()
 	{
 		alert("Vamos, la proxima se puede");
 	}
-	if (numeroRandom > 3 && numeroRandom < 9)
+	else
 	{
-		alert("Aprobo");
+		if (numeroRandom < 9) 
+		{
+			alert("Aprobo");
+		}
+		else
+		{
+			alert("Exelente!");
+		}
 	}
-	if (numeroRandom > 8 )
-	{
-		alert("Exelente!");
-	}
-
-
 }//FIN DE LA FUNCIÓN

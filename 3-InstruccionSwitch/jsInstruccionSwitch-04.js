@@ -1,10 +1,26 @@
 function mostrar()
 {
-	//tomo el mes
-	var mesDelAño =txtIdMes.value;
-	alert(mesDelAño);
-	
-	
+	var mesIngresado = document.getElementById("txtIdMes").value;
+	var cantidadDeDiasDelMes;
+
+	switch(mesIngresado)
+	{
+		case "Febrero":
+			cantidadDeDiasDelMes = 28;
+			break;
+
+		case "Abril":
+		case "Junio":
+		case "Septiembre":
+		case "Noviembre":
+			cantidadDeDiasDelMes = 30;
+			break;
+
+		default:
+			cantidadDeDiasDelMes = 31;
+	}
+
+	alert("Ese mes tiene " + cantidadDeDiasDelMes + " dias.");
 
 
 

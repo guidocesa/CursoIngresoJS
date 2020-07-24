@@ -29,47 +29,59 @@ function CalcularPrecio ()
      {
          porcentajeDeDescuento = 50;
      }
-     if(cantidadLamparas == 5)
+     else
      {
-         if(marcaSeleccionada == "ArgentinaLuz")
-         {
-             porcentajeDeDescuento = 40;
-         }
-         else
-         {
-             porcentajeDeDescuento = 30;
-         }
-     }
-     if(cantidadLamparas == 4)
-     {
-         if(marcaSeleccionada == "ArgentinaLuz" || marcaSeleccionada == "FelipeLamparas")
-         {
-             porcentajeDeDescuento = 25;
-         }
-         else
-         {
-             porcentajeDeDescuento = 20;
-         }
-     }
-     if(cantidadLamparas == 3)
-     {
-         if(marcaSeleccionada == "ArgentinaLuz")
-         {
-             porcentajeDeDescuento = 15;
-         }
-         if(marcaSeleccionada == "FelipeLamparas")
-         {
-             porcentajeDeDescuento = 10;
-         }
-         else
-         {
-             porcentajeDeDescuento = 5;
-         }
+        if(cantidadLamparas == 5)
+        {
+            if(marcaSeleccionada == "ArgentinaLuz")
+            {
+                porcentajeDeDescuento = 40;
+            }
+            else
+            {
+                porcentajeDeDescuento = 30;
+            }
+        } 
+        else
+        {
+            if(cantidadLamparas == 4)
+            {
+                if(marcaSeleccionada == "ArgentinaLuz" || marcaSeleccionada == "FelipeLamparas")
+                {
+                    porcentajeDeDescuento = 25;
+                }
+                else
+                {
+                    porcentajeDeDescuento = 20;
+                }
+            }
+            else
+            {
+                if(cantidadLamparas == 3)
+                {
+                    if(marcaSeleccionada == "ArgentinaLuz")
+                    {
+                        porcentajeDeDescuento = 15;
+                    }
+                    else
+                    {
+                        if(marcaSeleccionada == "FelipeLamparas")
+                        {
+                            porcentajeDeDescuento = 10;
+                        }
+                        else
+                        {
+                            porcentajeDeDescuento = 5;
+                        }
+                    }
+                }
+            }
+        }
      }
 
      //Se ajusta el porcentaje de descuento para poder multilpicar por el importe parcial y obtener el descuento a aplicar
      porcentajeDeDescuento = porcentajeDeDescuento / 100;
-     //Tambien ajusto el prcentaje de impuesto
+     //Tambien ajusto el porcentaje de impuesto
      porcentajeIngresosBrutos = porcentajeIngresosBrutos / 100;
 
      importeParcial = cantidadLamparas * precioPorLampara;

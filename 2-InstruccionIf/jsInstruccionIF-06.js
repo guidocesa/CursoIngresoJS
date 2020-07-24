@@ -1,24 +1,26 @@
 function mostrar()
 {
 	var edadIngresada;
+	var grupoPerteneciente;
 
 	edadIngresada = document.getElementById('txtIdEdad').value;
 	edadIngresada = parseInt(edadIngresada);
 
 	if (edadIngresada < 13)
 	{
-		alert("Usted es un niño.");
+		grupoPerteneciente = "niño";
 	}
 	else
 	{
 		if (edadIngresada < 18)
 		{
-			alert("Usted es un adolescente.");
+			grupoPerteneciente = "adolescente";
 		}
 		else
 		{
-			alert("Usted es un adulto.");
+			grupoPerteneciente = "adulto";
 		}
 	}
+	alert("Usted es un " + grupoPerteneciente + ".");
 
 }//FIN DE LA FUNCIÓN

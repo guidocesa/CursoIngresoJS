@@ -7,7 +7,7 @@ function mostrar()
 	edadIngresada = parseInt(edadIngresada);
 	estadoCivilIngresado = document.getElementById('estadoCivil').value;
 
-	if (edadIngresada >= 18 && estadoCivilIngresado == "Soltero")
+	if (edadIngresada > 17 && estadoCivilIngresado == "Soltero")
 	{
 		alert("Es soltero y no es menor.");
 	}
