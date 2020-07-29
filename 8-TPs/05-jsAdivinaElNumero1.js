@@ -12,15 +12,41 @@ var contadorIntentos;
 
 function comenzar()
 {
-	//Genero el número RANDOM entre 1 y 100
-	 
-		//alert(numeroSecreto );
-	
+  contadorIntentos = 0;
+
+  numeroSecreto = Math.random();
+	numeroSecreto = numeroSecreto * 100;
+	numeroSecreto = Math.floor(numeroSecreto);
+  numeroSecreto ++;
+  
+  document.getElementById("txtIdIntentos").value = contadorIntentos;
 
 }
 
 function verificar()
 {
-	
+  var numeroIngresado;
+  
+  numeroIngresado = document.getElementById("txtIdNumero").value;
+  numeroIngresado = parseInt(numeroIngresado);
+
+  contadorIntentos++;
+  document.getElementById("txtIdIntentos").value = contadorIntentos;
+
+  if(numeroIngresado < numeroSecreto)
+  {
+    alert("Falta para llegar!");
+  }
+  else
+  {
+    if(numeroIngresado > numeroSecreto)
+    {
+      alert("Se paso!");
+    }
+    else
+    {
+      alert("Usted es un ganador!! Y en solo " + contadorIntentos + " intentos.");
+    }
+  }
 	
 }

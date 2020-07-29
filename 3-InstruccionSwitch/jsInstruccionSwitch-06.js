@@ -45,6 +45,7 @@ function mostrar()
 		
 		default:
 			mensajeAMostrar = "La hora no existe.";
+			break;
 	}
 
 	alert(mensajeAMostrar);

@@ -52,9 +52,16 @@ function mostrar()
 
 		case "Primavera":
 		case "Otoño":
-			if(destinoIngresado != "Cordoba")
+			switch(destinoIngresado)
 			{
-				modificadorDePrecio = 10;
+				case "Cordoba":
+					modificadorDePrecio = 0; //Esta linea es redundante, pero la escribo en caso de cambios
+					break;
+				case "Bariloche":
+				case "Cataratas":
+				case "Mar del plata":
+					modificadorDePrecio = 10;
+					break;
 			}
 			break;
 
@@ -67,7 +74,5 @@ function mostrar()
 	precioFinal = diferencia + precioDeLaEstadia;
 
 	alert("El precio final es $" + precioFinal);
-
-
 
 }//FIN DE LA FUNCIÓN
